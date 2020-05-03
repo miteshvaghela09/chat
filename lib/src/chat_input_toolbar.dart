@@ -145,7 +145,8 @@ class ChatInputToolbar extends StatelessWidget {
                       ? () => _sendMessage(context, message)
                       : null,
                   child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/images/arrow.png'),
+                    child: Image.asset("assets/images/arrow.png",width: 15.0,height: 10.0,),
+                    backgroundColor: Colors.black,
                   ),
                 ),
 //                IconButton(
