@@ -147,7 +147,7 @@ class ChatInputToolbar extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.only(right: 5.0),
                     child: CircleAvatar(
-                      child: Image.asset("assets/images/arrow.png",width: 27.0,height: 27.0,),
+                      child: Image.asset("assets/images/arrow.png",width: 26.0,height: 21.0,),
                       backgroundColor: Colors.black,
                     ),
                   )
