@@ -140,12 +140,20 @@ class ChatInputToolbar extends StatelessWidget {
                   }
                 })
               else
-                IconButton(
-                  icon: Icon(Icons.send),
-                  onPressed: alwaysShowSend || text.length != 0
+                InkResponse(
+                  onTap: alwaysShowSend || text.length != 0
                       ? () => _sendMessage(context, message)
                       : null,
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/images/arrow.png'),
+                  ),
                 ),
+//                IconButton(
+//                  icon: Icon(Icons.send),
+//                  onPressed: alwaysShowSend || text.length != 0
+//                      ? () => _sendMessage(context, message)
+//                      : null,
+//                ),
               if (!showTraillingBeforeSend) ...trailling,
             ],
           ),
