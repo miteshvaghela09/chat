@@ -144,10 +144,13 @@ class ChatInputToolbar extends StatelessWidget {
                   onTap: alwaysShowSend || text.length != 0
                       ? () => _sendMessage(context, message)
                       : null,
-                  child: CircleAvatar(
-                    child: Image.asset("assets/images/arrow.png",width: 25.0,height: 20.0,),
-                    backgroundColor: Colors.black,
-                  ),
+                  child: Padding(
+                    padding: EdgeInsets.only(right: 5.0),
+                    child: CircleAvatar(
+                      child: Image.asset("assets/images/arrow.png",width: 27.0,height: 27.0,),
+                      backgroundColor: Colors.black,
+                    ),
+                  )
                 ),
 //                IconButton(
 //                  icon: Icon(Icons.send),
